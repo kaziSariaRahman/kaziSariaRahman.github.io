@@ -229,6 +229,24 @@ footer{padding:34px 0 110px;text-align:center;color:var(--muted);font-size:.9rem
   .rv{opacity:1;transform:none}
   h1 .ch{opacity:1;transform:none}
 }
+  /* mobile fix */
+html,body{overflow-x:hidden;max-width:100%}
+.skill-grid{grid-template-columns:minmax(0,1fr)}
+.skill-box{min-width:0;max-width:100%;overflow:hidden}
+.marq{min-width:0;max-width:100%}
+.proj-grid{grid-template-columns:repeat(auto-fill,minmax(min(310px,100%),1fr))}
+.btn{max-width:100%;overflow-wrap:anywhere;text-align:center}
+@media(max-width:860px){
+  .hero-grid,.about-grid,.two-col{grid-template-columns:minmax(0,1fr)}
+  .hero-grid>*,.about-grid>*,.two-col>*{min-width:0}
+  .orb.a{width:280px;height:280px;right:-140px}
+  .orb.b{width:260px;height:260px;left:-130px}
+  .row{flex-direction:column;gap:4px}
+  .row .r{text-align:left;white-space:normal}
+  .job{padding:20px 18px}
+  .card,.skill-box{padding:20px}
+  section{padding:64px 0}
+}
 </style>
 </head>
 <body>
